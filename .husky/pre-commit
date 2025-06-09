@@ -1,0 +1,4 @@
+node .scripts/check-cors.js
+
+npm test
+

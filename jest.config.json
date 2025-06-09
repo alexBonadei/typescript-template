@@ -1,0 +1,21 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "testMatch": [
+    "**/*.test.ts"
+  ],
+  "coverageDirectory": "./coverage",
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.ts",
+    "!**/node_modules/**"
+  ],
+  "coverageReporters": [
+    "html",
+    "text",
+    "text-summary",
+    "cobertura",
+    "lcov"
+  ],
+  "testTimeout": 20000
+}

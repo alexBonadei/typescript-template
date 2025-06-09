@@ -1,0 +1,61 @@
+{
+  "extends": [
+    "@mia-platform/eslint-config-mia"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "ignorePatterns": [
+    "*.d.ts"
+  ],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": true,
+        "allowSeparatedGroups": true
+      }
+    ],
+    "max-len": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": [
+      "error"
+    ],
+    "no-console": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.test.ts",
+        "samples.ts"
+      ],
+      "rules": {
+        "no-await-in-loop": "off",
+        "default-case": "off",
+        "guard-for-in": "off",
+        "no-shadow": "off",
+        "id-length": "off",
+        "max-depth": "off",
+        "max-lines": "off",
+        "max-nested-callbacks": "off",
+        "max-statements": "off",
+        "@typescript-eslint/no-shadow": "off",
+        "no-loop-func": "off"
+      }
+    }
+  ],
+  "globals": {
+    "NodeJS": true
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ]
+}
